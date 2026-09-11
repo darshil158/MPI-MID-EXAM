@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================================================
+         BASIC DOCUMENT SETUP
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Microprocessor and Interfacing BE05000551 - 8085 Mid-Term Exam Master Guide"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111827"
+    >
+
+    <title>
+        MPI EXAM | 8085 Mid-Term Master Guide
+    </title>
+
+
+    <!-- =========================================================
+         EXTERNAL / LOCAL STYLES
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- =========================================================
+         GLOBAL READING PROGRESS
+         app.js will dynamically update the width.
+    ========================================================== -->
+
+    <div
+        id="progress"
+        class="reading-progress"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =========================================================
+         TOP NAVIGATION BAR
+    ========================================================== -->
+
+    <header
+        class="topbar"
+        id="topbar"
+    >
+
+        <!-- Brand -->
+        <a
+            href="#home"
+            class="brand"
+            aria-label="MPI Exam Home"
+        >
+
+            <div class="brand-mark">
+                8085
+            </div>
+
+            <div class="brand-text">
+
+                <strong>
+                    MPI EXAM
+                </strong>
+
+                <span>
+                    Mid-Term Master Guide
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- Top right controls -->
+        <div class="top-actions">
+
+            <!-- Mobile menu -->
+            <button
+                id="menuBtn"
+                class="icon-btn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="sidebar"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <!-- Focus mode -->
+            <button
+                id="focusBtn"
+                class="tool-btn"
+                type="button"
+            >
+                Focus
+            </button>
+
+
+            <!-- Theme -->
+            <button
+                id="themeBtn"
+                class="icon-btn"
+                type="button"
+                aria-label="Toggle dark mode"
+                title="Toggle dark mode"
+            >
+                ◐
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         SIDEBAR NAVIGATION
+    ========================================================== -->
+
+    <aside
+        id="sidebar"
+        class="sidebar"
+        aria-label="Course navigation"
+    >
+
+        <div class="sidebar-head">
+
+            <div>
+
+                <small>
+                    SEM 5 • COMPUTER ENGINEERING
+                </small>
+
+                <h2>
+                    Study Control
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <!--
+            app.js will populate this navigation dynamically.
+        -->
+
+        <nav
+            id="sideNav"
+            class="side-nav"
+            aria-label="Unit navigation"
+        >
+        </nav>
+
+
+        <!-- Keyboard shortcuts -->
+
+        <section
+            class="shortcuts"
+            aria-label="Keyboard shortcuts"
+        >
+
+            <b>
+                Keyboard Shortcuts
+            </b>
+
+            <span>
+                <kbd>/</kbd>
+                Search
+            </span>
+
+            <span>
+                <kbd>N</kbd>
+                Next topic
+            </span>
+
+            <span>
+                <kbd>P</kbd>
+                Previous topic
+            </span>
+
+            <span>
+                <kbd>D</kbd>
+                Dark mode
+            </span>
+
+            <span>
+                <kbd>Esc</kbd>
+                Close menu
+            </span>
+
+        </section>
+
+    </aside>
+
+
+    <!-- =========================================================
+         MAIN APPLICATION
+    ========================================================== -->
+
+    <main
+        id="home"
+        class="main"
+    >
+
+
+        <!-- =====================================================
+             HERO / INTRODUCTION
+        ====================================================== -->
+
+        <section
+            class="hero"
+            aria-labelledby="heroTitle"
+        >
+
+            <div class="hero-copy">
+
+                <span class="pill">
+                    MID-TERM • BE05000551
+                </span>
+
+
+                <h1 id="heroTitle">
+                    Microprocessor
+                    <span>&amp;</span>
+                    Interfacing
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Complete 8085-focused exam preparation
+                    covering the full Mid-Term scope with
+                    detailed 8-mark answers, programs,
+                    diagrams, instruction tables and
+                    exam-writing guidance.
+
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <button
+                        id="startBtn"
+                        class="primary-btn"
+                        type="button"
+                    >
+                        🔥 Start Must-Prepare
+                    </button>
+
+
+                    <button
+                        id="randomBtn"
+                        class="secondary-btn"
+                        type="button"
+                    >
+                        Random Topic
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero statistic -->
+
+            <div
+                class="hero-stat"
+                aria-label="29 exam preparation topics"
+            >
+
+                <strong>
+                    29
+                </strong>
+
+                <span>
+                    Exam Topics
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SYLLABUS SCOPE
+        ====================================================== -->
+
+        <section
+            class="scope card"
+            aria-labelledby="scopeTitle"
+        >
+
+            <div class="section-title">
+
+                <div>
+
+                    <span class="eyebrow">
+                        SYLLABUS CONTROL
+                    </span>
+
+                    <h2 id="scopeTitle">
+                        Mid-Term Scope
+                    </h2>
+
+                </div>
+
+
+                <span class="scope-note">
+                    Unit 4 is restricted
+                </span>
+
+            </div>
+
+
+            <div class="scope-grid">
+
+                <!-- Unit 1 -->
+
+                <article class="scope-item">
+
+                    <span class="scope-unit">
+                        UNIT 1
+                    </span>
+
+                    <strong>
+                        Full
+                    </strong>
+
+                    <small>
+                        Introduction to Microprocessor
+                    </small>
+
+                </article>
+
+
+                <!-- Unit 3 -->
+
+                <article class="scope-item">
+
+                    <span class="scope-unit">
+                        UNIT 3
+                    </span>
+
+                    <strong>
+                        Full
+                    </strong>
+
+                    <small>
+                        8085 Architecture &amp; Operations
+                    </small>
+
+                </article>
+
+
+                <!-- Unit 4 -->
+
+                <article class="scope-item restricted">
+
+                    <span class="scope-unit">
+                        UNIT 4
+                    </span>
+
+                    <strong>
+                        Restricted
+                    </strong>
+
+                    <small>
+                        Assembly Basics + Classification
+                    </small>
+
+                </article>
+
+
+                <!-- Unit 5 -->
+
+                <article class="scope-item">
+
+                    <span class="scope-unit">
+                        UNIT 5
+                    </span>
+
+                    <strong>
+                        Full
+                    </strong>
+
+                    <small>
+                        Decision Making &amp; Looping
+                    </small>
+
+                </article>
+
+
+                <!-- Unit 6 -->
+
+                <article class="scope-item">
+
+                    <span class="scope-unit">
+                        UNIT 6
+                    </span>
+
+                    <strong>
+                        Full
+                    </strong>
+
+                    <small>
+                        Stack, Subroutines &amp; Data Operations
+                    </small>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             DASHBOARD
+        ====================================================== -->
+
+        <section
+            class="dashboard"
+            aria-labelledby="dashboardTitle"
+        >
+
+            <div class="section-title">
+
+                <div>
+
+                    <span class="eyebrow">
+                        DASHBOARD
+                    </span>
+
+                    <h2 id="dashboardTitle">
+                        Plan Your Revision
+                    </h2>
+
+                </div>
+
+
+                <span
+                    id="resultCount"
+                    class="count"
+                >
+                    29 topics
+                </span>
+
+            </div>
+
+
+            <!--
+                app.js creates unit progress bars here.
+            -->
+
+            <div
+                id="unitMap"
+                class="unit-map"
+            >
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TOPIC LIBRARY
+        ====================================================== -->
+
+        <section
+            id="quick"
+            class="library"
+            aria-labelledby="libraryTitle"
+        >
+
+            <div class="library-head">
+
+                <div>
+
+                    <span class="eyebrow">
+                        QUESTION BANK
+                    </span>
+
+                    <h2 id="libraryTitle">
+                        All Exam Topics
+                    </h2>
+
+                </div>
+
+
+                <!-- Search and filters -->
+
+                <div class="controls">
+
+                    <!-- Search -->
+
+                    <label
+                        class="search"
+                        for="search"
+                    >
+
+                        <span
+                            class="search-icon"
+                            aria-hidden="true"
+                        >
+                            ⌕
+                        </span>
+
+                        <input
+                            id="search"
+                            type="search"
+                            placeholder="Search topic, instruction, concept..."
+                            autocomplete="off"
+                            aria-label="Search exam topics"
+                        >
+
+                    </label>
+
+
+                    <!-- Priority filters -->
+
+                    <div
+                        class="filters"
+                        role="group"
+                        aria-label="Topic priority filters"
+                    >
+
+                        <button
+                            class="filter active"
+                            type="button"
+                            data-filter="all"
+                        >
+                            All
+                        </button>
+
+
+                        <button
+                            class="filter"
+                            type="button"
+                            data-filter="Must Prepare"
+                        >
+                            🔥 Must
+                        </button>
+
+
+                        <button
+                            class="filter"
+                            type="button"
+                            data-filter="High Priority"
+                        >
+                            ⭐ High
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--
+                app.js dynamically generates all 29 topic cards.
+            -->
+
+            <div
+                id="topicGrid"
+                class="topic-grid"
+                aria-live="polite"
+            >
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ANSWER READER
+        ====================================================== -->
+
+        <section
+            id="reader"
+            class="reader card"
+            aria-label="Exam answer reader"
+        >
+
+            <!--
+                app.js inserts the selected topic here.
+            -->
+
+            <div
+                id="readerContent"
+                class="reader-content"
+            >
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+         TOAST NOTIFICATION
+    ========================================================== -->
+
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT DATA
+         topics.js must be loaded BEFORE app.js.
+    ========================================================== -->
+
+    <script src="topics.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
